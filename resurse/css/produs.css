@@ -1,0 +1,451 @@
+﻿h2{
+    padding:0.4rem;
+}
+#art-produs{
+    margin:0 auto;
+    width:70%;
+    max-width:700px;
+    background-color: var(--cl-light-t);
+    box-shadow: 0px 0px 10px 5px grey;
+    padding:0.4rem;
+}
+
+#art-produs p{
+    margin:0;
+    padding:0.4rem;
+    font-weight:bold;
+    font-size:1.1rem;
+}
+
+#art-produs p span{
+    font-weight: normal;
+}
+#art-produs p:nth-of-type(even){
+    background-color: var(--culoare-roz-inchis);
+}
+#art-produs p:nth-of-type(odd){
+    background-color: var(--cl-marcare);
+}
+.imag-produs{
+    text-align: center;
+}
+.imag-produs img{
+    width:50%;
+    height:auto;
+}
+@media screen and (max-width: 700px){
+    #art-produs{
+        margin:0 auto;
+        width:95%;
+    }
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: #DA77F2;
+}
+
+    nav ul li {
+        position: relative;
+    }
+
+        nav ul li a {
+            display: block;
+            padding: 10px 15px;
+            color: #FFFFFF;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+            nav ul li a:hover, nav ul li a:focus {
+                background-color: #7367F0;
+            }
+
+                nav ul li a:hover::after, nav ul li a:focus::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: rgba(255, 255, 255, 0.2);
+                    z-index: -1;
+                    transition: transform 0.5s;
+                    transform: scaleY(0);
+                    transform-origin: top;
+                    border: 1px solid white;
+                    box-shadow: inset 0 0 10px #4839eb;
+                }
+
+                nav ul li a:hover::after, nav ul li a:focus::after {
+                    transform: scaleY(1);
+                }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            min-width: 140px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            transition: transform 0.5s ease-in-out;
+            transform-origin: top left;
+            transform: scale(0);
+        }
+
+            nav ul li ul li {
+                display: block;
+            }
+
+                nav ul li ul li a:hover {
+                    text-decoration: underline;
+                    text-underline-offset: 3px;
+                }
+
+                    nav ul li ul li a:hover::after {
+                        content: "";
+                        display: block;
+                        height: 2px;
+                        background: #FFFFFF;
+                        position: relative;
+                        top: 3px;
+                    }
+
+        nav ul li:hover > ul {
+            display: block;
+            transform: scale(1);
+        }
+
+/*# sourceMappingURL=nav.css.map */
+
+
+
+/*  still.css   */
+
+
+/* Stil general */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-soft);
+    color: var(--text-secondary);
+}
+
+/* Header */
+header {
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 5px solid var(--border-primary); /* Border */
+    border-radius: 0 0 15px 15px; /* Colturi rotunjite în partea de jos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow sub header */
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--background-quaternary); /* Fundal footer */
+    color: var(--text-primary); /* Culoare text footer */
+    text-align: center;
+    padding: 20px;
+    border-top: 5px solid var(--border-secondary); /* Border */
+    border-radius: 15px 15px 0 0; /* Colturi rotunjite în partea de sus */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Shadow deasupra footer */
+}
+
+/* Zona Gridului */
+.container-grid {
+    display: grid;
+    gap: 20px; /* Spatiere intre celule */
+    padding: 20px;
+    background-color: var(--background-tertiary); /* Fundal zona grid */
+    border: 3px solid var(--border-light); /* Border pentru grid */
+    border-radius: 10px; /* Colturi rotunjite pentru grid */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Shadow pentru zona grid */
+    margin: 20px auto; /* Centrare si spatiere */
+}
+
+
+
+footer small, footer address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+    footer address p, footer small {
+        margin: 0;
+    }
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* ajustari */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+        nav ul li {
+            text-align: center;
+        }
+
+    footer {
+        flex-direction: column;
+    }
+
+        footer small, footer address {
+            flex-direction: column;
+            align-items: center;
+        }
+}
+
+
+
+section, article, aside {
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #005a87;
+}
+
+
+
+:root {
+    --text-padding: 20px;
+}
+
+/*  padding pentru elemente  de text */
+p, h1, h2, h3, h4, h5, h6, .text-container {
+    padding: var(--text-padding);
+}
+
+/*  header, footer si containerul grid */
+header, footer, .container-grid {
+    padding: var(--text-padding);
+}
+
+    /*  padding doar în interiorul acestor zone și nu la container in sine */
+    header p, footer p, .container-grid p {
+        padding: var(--text-padding);
+    }
+
+/*  figcaption */
+figcaption {
+    padding: var(--text-padding);
+}
+
+
+
+.fa-keyboard, .fa-cog {
+    font-size: 24px; /* Ajustează dimensiunea iconurilor */
+    color: #4E25DB; /* O culoare din schema site-ului */
+}
+
+.fa-cog {
+    animation: spin 2s infinite linear; /* Personalizează viteza de rotație pentru iconul animat */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+#link-top {
+    position: fixed;
+    bottom: 0.3em;
+    opacity: 0.5;
+    left: 0.3em;
+    width: 4rem;
+    box-sizing: border-box;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border: 5px solid grey;
+    border-top: 0;
+    border-bottom: 0;
+    border-radius: 50%;
+    background: rgb(220, 220, 220);
+}
+
+    #link-top:hover {
+        opacity: 1;
+    }
+
+#triunghi {
+    height: 0px;
+    width: 0;
+    display: inline-block;
+    border-bottom: 1.5rem solid grey;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    transition: transform 0.3s ease; /* tranzitie pentru transformarea triunghiului */
+}
+
+#link-top:hover #triunghi {
+    border-bottom-color: yellow; /* Schimbăm culoarea  la hover */
+    transform: translateY(-50%);
+}
+
+
+
+/* Container pentru tabel */
+.table-container {
+    overflow-x: auto; /*  scrollbar orizontal */
+    margin: 20px;
+}
+
+/* Tabel */
+table {
+    border-collapse: collapse;
+    border: 5px double #333;
+    width: 100%;
+}
+
+/* Celule de tabel */
+th, td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Stilizare pentru captiune */
+caption {
+    caption-side: bottom;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Efect la hover */
+tr:hover td {
+    background-color: #333;
+    color: #fff;
+    border-width: 5px;
+    transition: background-color 0.75s, color 0.75s, border-width 0.75s; /* tranzitie */
+}
+
+
+tbody td:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+
+
+#efect-css-reflexie-text {
+    color: var(--text-primary);
+    font-weight: 800;
+    position: relative;
+    font-size: 50px;
+}
+
+    #efect-css-reflexie-text::after {
+        color: gray;
+        content: 'ClickCraft'; /* Text content for the reflection */
+        position: absolute;
+        bottom: 86px; /* Adjust the reflection position */
+        left: 0;
+        right: 0;
+        height: 100%; /* Make sure it covers the entire text */
+        -webkit-transform: scaleY(1) rotateX(180deg); /* Initial scaleY value and rotation */
+        transform-origin: bottom; /* Set the rotation origin to the bottom */
+    }
+
+    #efect-css-reflexie-text:hover::after {
+        bottom: 140px;
+        -webkit-transform: scaleY(2) rotateX(180deg); /* Scale the reflection vertically and keep the rotation */
+    }
+
+
+.container {
+    width: 100%; /* Lățimea containerului */
+    overflow: hidden; /* Ascundem liniile care depășesc dimensiunea containerului */
+}
+
+.styled-hr {
+    height: 10px; /* Înălțimea liniei */
+    background-image: url("/resurse/imagini/hr.png");
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  culori.css  */
+
+/* Definitii culori */
+ 
+:root {
+    /* Culori de bază  */
+    --blue: #4E25DB;
+    --magenta: #C41FDB;
+    --light-purple: #9745DC;
+    --dark-blue: #3042DB;
+    --pink: #DB1490;
+    --lilac: #912FE0;
+
+    /* Extinderea paletei */
+    --light-blue: #7367F0; /* Albastru deschis */
+    --soft-magenta: #DA77F2; /* Magenta deschis */
+    --pastel-purple: #D6BCFA; /* Mov pastelat */
+    --navy-blue: #273C75; /* Albastru marin */
+    --rose-pink: #FF6B81; /* Roz trandafir */
+    --pale-lilac: #D8B4FE; /* Lila pal */
+
+    /* Culori pentru fundal */
+    --background-primary: var(--blue);
+    --background-secondary: var(--magenta);
+    --background-tertiary: var(--light-purple);
+    --background-quaternary: var(--dark-blue);
+    --background-quinary: var(--pink);
+    --background-soft: var(--pastel-purple); /* Pentru un fundal mai deschis  */
+
+    /* Culori pentru text */
+    --text-primary: #FFFFFF;
+    --text-secondary: #333333;
+    --text-on-primary: var(--blue);
+    --text-on-secondary: var(--navy-blue); /* Albastru închis pentru text pe fundaluri deschise */
+
+    /* Culori pentru borduri */
+    --border-primary: var(--lilac);
+    --border-secondary: var(--pink);
+    --border-light: var(--pale-lilac); /* Lila pal pentru borduri subtile */
+
+    /* Culori pentru elemente interactive sau în stare de hover */
+    --hover-primary: var(--light-blue); /* Albastru deschis la hover */
+    --hover-secondary: var(--soft-magenta); /* Magenta deschis la hover */
+    --hover-text: var(--text-primary);
+    --hover-border: var(--rose-pink); /* Roz trandafir pentru borduri la hover */
+}

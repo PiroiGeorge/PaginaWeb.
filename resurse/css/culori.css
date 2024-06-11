@@ -1,0 +1,46 @@
+﻿/*  culori.css  */
+
+/* Definitii culori */
+ 
+:root {
+    /* Culori de bază  */
+    --blue: #4E25DB;
+    --magenta: #C41FDB;
+    --light-purple: #9745DC;
+    --dark-blue: #3042DB;
+    --pink: #DB1490;
+    --lilac: #912FE0;
+
+    /* Extinderea paletei */
+    --light-blue: #7367F0; /* Albastru deschis */
+    --soft-magenta: #DA77F2; /* Magenta deschis */
+    --pastel-purple: #D6BCFA; /* Mov pastelat */
+    --navy-blue: #273C75; /* Albastru marin */
+    --rose-pink: #FF6B81; /* Roz trandafir */
+    --pale-lilac: #D8B4FE; /* Lila pal */
+
+    /* Culori pentru fundal */
+    --background-primary: var(--blue);
+    --background-secondary: var(--magenta);
+    --background-tertiary: var(--light-purple);
+    --background-quaternary: var(--dark-blue);
+    --background-quinary: var(--pink);
+    --background-soft: var(--pastel-purple); /* Pentru un fundal mai deschis  */
+
+    /* Culori pentru text */
+    --text-primary: #FFFFFF;
+    --text-secondary: #333333;
+    --text-on-primary: var(--blue);
+    --text-on-secondary: var(--navy-blue); /* Albastru închis pentru text pe fundaluri deschise */
+
+    /* Culori pentru borduri */
+    --border-primary: var(--lilac);
+    --border-secondary: var(--pink);
+    --border-light: var(--pale-lilac); /* Lila pal pentru borduri subtile */
+
+    /* Culori pentru elemente interactive sau în stare de hover */
+    --hover-primary: var(--light-blue); /* Albastru deschis la hover */
+    --hover-secondary: var(--soft-magenta); /* Magenta deschis la hover */
+    --hover-text: var(--text-primary);
+    --hover-border: var(--rose-pink); /* Roz trandafir pentru borduri la hover */
+}

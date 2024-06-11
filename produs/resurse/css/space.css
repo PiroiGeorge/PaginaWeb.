@@ -1,0 +1,15 @@
+﻿/*  space.css   */
+ 
+:root {
+    /* Spațieri */
+    --padding-general: 1rem;
+    --margin-general: 2rem;
+    --grid-gap: 20px;
+    --grid-gap-medium: 15px;
+    --grid-gap-small: 10px;
+
+  
+    /* Dimensiuni media */
+    --media-max-width: 100%;
+    --media-min-width: 200px;
+}

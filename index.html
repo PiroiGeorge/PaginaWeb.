@@ -1,0 +1,505 @@
+<!--    index.html      -->
+
+<!DOCTYPE html>
+
+<html lang="ro"> 
+
+<head>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+
+    <title> ClickCraft </title>
+
+    <meta charset="UTF-8"><!-- codificarea în memorie a caracterelor-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- va fi explicat când ajungem la CSS -->
+
+    <meta name="author" content="Piroi Madalin-George">  <!-- autorul/autoarea paginii-->
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./resurse/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./resurse/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./resurse/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./resurse/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./resurse/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./resurse/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config" content="./resurse/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--css files-->
+    <link rel="stylesheet" href="resurse/css/still.css" type="text/css" />
+    <link rel="stylesheet" href="resurse/css/culori.css" type="text/css" />
+    <link rel="stylesheet" href="resurse/css/nav700.css" type="text/css" media="screen and (max-width:700px)" />
+    <link rel="stylesheet" href="resurse/css/nav.css" type="text/css" />
+    <link rel="stylesheet" href="resurse/css/nav.scss" type="text/css" />
+    <link rel="stylesheet" href="resurse/css/video.css" type="text/css" />
+    <link rel="stylesheet" href="resurse/css/images.css" type="text/css" />
+    <link rel="stylesheet" href="resurse/css/links.css" type="text/css" />
+    <link rel="stylesheet" href="resurse/css/space.css" type="text/css" />
+    <link rel="stylesheet" href="resurse/css/layout.css" type="text/css" />
+    <link rel="stylesheet" href="resurse/css/printare.css" type="text/css" />
+    <link rel="stylesheet" href="resurse/css/nav500.css" type="text/css" media="screen and (max-width:500px)" />
+    <link rel="stylesheet" href="resurse/css/galerie-statica.css" type="text/css" />
+
+
+
+
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta name="keywords" content="tastaturi,clic,tastatura,model ergonomice,tastaturi mecanice,sesiunile de lucru,gmaing,creatie,tiparire,tastaturile,design,performanta,model,gamerilor,profesionisti,munca,mecanice,membrana,RGB,functii programabile,tasta,tactila,lucru,jocului,accesorile,keycaps,incheieturi,confort,lucru,joc,husa de protectie,kit-uri de curatare,apasare"><!--cuvintele cheie ale paginii; majoritatea motoarelor de căutare ignoră keywords -->
+    <meta name="description" content=" Tastaturi de top pentru performanță și confort.Design și tehnologie avansată,într-un singur loc.Eleganță și eficiență sub fiecare clic.Descoperă gama noastră selectă de tastaturi."><!-- descrierea paginii, adesea apare sub link când sunt afișate rezultatele căutării -->
+
+</head>
+
+
+
+
+<body>
+
+    <footer>
+
+        <small>
+            © 2024 ClickCraft Toate drepturile rezervate
+            <time datetime="2024-01-01">Data creării: 1 ianuarie 2024</time>
+        </small>
+
+        <address>
+            <!-- Număr de telefon fictiv -->
+            <p><a href="tel:+1234567890">+123 456 7890</a></p>
+
+            <!-- Adresă fictivă -->
+            <p><a href="https://maps.app.goo.gl/fgLi6KmjLZ1eb9tU8" target="_blank">ClickCraft</a></p>
+
+            <!-- E-mail fictiv -->
+            <p><a href="mailto:ClickCraft@egmail.com">ClickCraft@gmail.com</a></p>
+
+            <!-- Link pentru deschiderea Skype -->
+            <p><a href="skype:fictiv.user?chat">Skype</a></p>
+
+            <!-- Link deschider WhatsApp -->
+            <p><a href="https://api.whatsapp.com/send?phone=1234567890">WhatsApp</a></p>
+        </address>
+    </footer>
+
+    <header id="top">
+
+        <h1> ClickCraft </h1>           <!-- Nume site -->
+
+        <nav>
+            <label id="hamburger" for="ch-menu">
+                <img src="resurse/imagini/Hamburger_icon_alb.png" alt="menu">
+            </label>
+            <input id="ch-menu" type="checkbox">
+
+
+            <ul class="meniu">
+
+                <li>
+                    <a href="#Acasa">
+                        <i class="fas fa-home"></i> <!-- Iconița de acasă -->
+                        <span class="home-text">Acasă</span> <!-- Textul "Acasă" -->
+                    </a>
+                </li>   <!--Pagina Acasa -->
+
+
+                <li>
+                    <a href="#Tastaturi">Tastaturi</a>         <!--Pagina Tastaturi -->
+
+                    <ul>
+
+                        <li><a href="#Toate_Tastaturile">Toate</a></li>       <!--Subsectiune pentru toate tastaturile -->
+                        <li><a href="#Brand_Tastaturi">Brand</a></li>       <!--Subsectiune cu Branduri -->
+                        <li><a href="#Tip_Tastatura">Tip Tastatura</a></li>       <!--Subsectiune cu tip de tastatura -->
+                        <li><a href="#Tip_Utilizare">Tip Utilizare</a></li>       <!--Subsectiune cu tipul de utilizare -->
+
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#Accesorii">Accesorii </a>       <!--Pagina Accesorii -->
+
+                    <ul>
+
+                        <li><a href="#Toate_Accesoriile">Toate</a></li>       <!-- Subsectiune pentru toate Accesoriile -->
+                        <li><a href="#KeyCaps">KeyCaps</a></li>         <!-- Subsectiune pentru Keycaps -->
+                        <li><a href="#Spray_de_curatare">Spray de curatare</a></li>       <!-- Subsectiuen pentru Spray de curatare -->
+                        <li><a href="#Suport_incheietura">Suport incheietura</a></li>      <!-- Subsectiune pentru Suport de incheietura -->
+
+
+                    </ul>
+
+                </li>
+
+                <li><a href="#Magazine">Magazine</a></li>        <!--Pagina Magazine-->
+
+                <li>
+                    <a href="#Suport">Suport </a>       <!--Pagina Suport-->
+
+                    <ul>
+
+                        <li><a href="#Contact_si_Asistenta">Contact si Asistenta</a></li>        <!--Subsectiune pentru Contact si Asistenta-->
+                        <li><a href="#Ghid_de_cumparaturi">Ghid de cumparaturi</a></li>         <!--Subsectiune pentru Ghid de cumparaturi-->
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+
+    <main>
+        <section id="grid-pagina">
+
+            <!--    zone1   -->
+            <!--Imagini pentru calculator,tableta si telefon cu descriere-->
+
+            <figure id="figure">
+                <picture>
+                    <source srcset="./resurse/imagini/imag4_mare.jpg" media="(min-width: 1024px)" />
+                    <source srcset="./resurse/imagini/imag4_medie.jpg" media="(min-width: 750px)" />
+                    <source srcset="./resurse/imagini/imag4_mica.jpg" media="(min-width: 500px)" />
+                    <img src="./resurse/imagini/imag4_mica.jpg" alt="Fă primul pas în viitor!" />
+                </picture>
+                <figcaption>Fă primul pas în <b>viitor</b>!</figcaption>
+            </figure>
+            </section>
+
+
+
+
+
+
+
+
+            <section id="video">
+                <!-- Linkuri care modifică sursa unui singur iframe când sunt apăsate -->
+                <div class="container-iframe">
+                    <div class="taburi-iframe">
+
+                        <a href="https://www.youtube.com/embed/rDKM8-19F8M" target="ifr-video">Alegere tastaturi</a>
+                        <a href="https://www.youtube.com/embed/ECAvPIbAhOk" target="ifr-video">Tastaturi mecanice</a>
+                        <a href="https://www.youtube.com/embed/xWtK9ISiCnw?si=vTXBqt3DfjCpTKqR" target="ifr-video">Tastatura programatorilor</a>
+                        <a href="https://www.youtube.com/embed/nmzs2wjtn6g?si=MGvJxorKDvh7GkO8" target="ifr-video">Cele mai bune accesorii</a>
+
+                    </div>
+
+                    <iframe name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/rDKM8-19F8M" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+                </div>
+            </section>
+
+
+
+
+            <section id="tabel">
+
+
+                <div class="table-container">
+                    <table>
+                        <caption>Cele mai cumparate tastaturi</caption>
+                        <thead>
+                            <tr>
+                                <th>Model</th>
+                                <th>Tip</th>
+                                <th>Preț (RON)</th>
+                                <th>Stoc</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Logitech G Pro X</td>
+                                <td>Mecanică</td>
+                                <td>500</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>Razer BlackWidow Elite</td>
+                                <td>Mecanică</td>
+                                <td>600</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>Corsair K95 RGB Platinum XT</td>
+                                <td>Mecanică</td>
+                                <td>700</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>SteelSeries Apex Pro</td>
+                                <td>Mecanică</td>
+                                <td>800</td>
+                                <td>5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            
+
+            <!-- Descriere site -->
+            <section id="Acasa">
+
+
+                <ins><h2>Acasa</h2></ins>
+                <p>
+                    Bine ai venit pe pagina de acasă a <em><b>ClickCraft</b></em>, sanctuarul pasionaților de tastaturi.Aici, vei descoperi o lume unde fiecare clic contează și fiecare tastatură îți spune o poveste. De la modele <b>ergonomice</b>, concepute pentru confortul tău, la tastaturi <b>mecanice</b>, gândite să îți ofere precizia și răspunsul rapid de care ai nevoie, avem tot ce îți poate dori inima. Explorează colecția noastră selectă și găsește companionul perfect pentru <em><b>sesiunile tale de lucru, gaming sau creație</b></em>. Îmbunătățește-ți experiența de tipărire cu ClickCraft!
+                </p>
+
+                <div class="flex-container">
+                    <a href="https://www.google.co.uk/" target="_blank">Google.com</a>
+                </div>
+
+
+                <div class="flex-container">
+                    <a href="./resurse/imagini/imag4_mare.jpg" download="Imagine_mare.jpg">Descarcă imagine</a>
+                </div>
+
+
+                <section id="intrebari-frecvente">
+                    <h2>Întrebări frecvente</h2>
+
+                    <details>
+                        <summary>Cum pot comanda produse?</summary>
+                        <p>Pentru a comanda produsele noastre, puteți vizita pagina noastră de magazin și adăugați produsele dorite în coșul de cumpărături. Apoi, urmați procedura de checkout pentru a finaliza comanda.</p>
+                    </details>
+
+                    <details>
+                        <summary>Care sunt modalitățile de plată acceptate?</summary>
+                        <p>Acceptăm plata cu cardul de credit/debit, PayPal și plata la livrare pentru comenzile efectuate online. În magazinul nostru fizic, puteți plăti cu numerar sau cu cardul.</p>
+                    </details>
+
+                    <details>
+                        <summary>Cât durează procesul de livrare?</summary>
+                        <p>Timpul de livrare variază în funcție de locația dumneavoastră și de opțiunile de livrare selectate. În general, livrările standard se fac în termen de 2-5 zile lucrătoare.</p>
+                    </details>
+                </section>
+
+
+            </section>
+
+            <!--Descriere tastaturi-->
+            <section id="Tastaturi">
+
+                <ins><h2>Tastaturi</h2></ins>
+                <p>
+                    Tastaturile noastre reprezintă punctul de întâlnire între inovație, design și performanță. Fiecare model este conceput cu grijă pentru a satisface cerințele specifice ale utilizatorilor, de la <b>durabilitatea</b> necesară gamerilor până la <b>confortul</b> căutat de profesioniști în lungile ore de muncă. Cu o varietate de opțiuni <b>mecanice și membrană, iluminare RGB personalizabilă și funcții programabile</b>, tastaturile noastre sunt create să transforme fiecare apăsare de tastă într-o experiență plăcută și eficientă. Descoperă precizia, răspunsul <b>rapid</b> și senzația tactilă superioară oferită de selecția noastră exclusivă, gândită să îți optimizeze fluxul de lucru și să îți intensifice plăcerea jocului.
+                </p>
+
+                <section id="Toate_Tastaturile">
+
+                    <h3>Toate</h3>
+                    
+
+
+
+                    
+                </section>
+
+                <section id="Brand_Tastaturi">
+                    <h3>Brand</h3>
+                    <p>
+                        <dl>
+                            <dt>Logitech</dt>
+                            <dd>Renowned for innovative and quality computer peripherals, including keyboards for gaming and productivity.</dd>
+                            <dt>Razer</dt>
+                            <dd>Focused on high-end gaming gear, Razer offers mechanical keyboards known for their durability and performance.</dd>
+                            <dt>Corsair</dt>
+                            <dd>Specializes in gaming peripherals and hardware, Corsair keyboards are well-regarded for their build quality and customization options.</dd>
+                            <dt>SteelSeries</dt>
+                            <dd>Offers a range of gaming peripherals, including keyboards that emphasize aesthetics, performance, and durability.</dd>
+                            <dt>Cherry</dt>
+                            <dd>Best known for manufacturing the Cherry MX switches used in many mechanical keyboards, Cherry also produces its own line of high-quality keyboards.</dd>
+                            <dt>Das Keyboard</dt>
+                            <dd>Focuses on producing minimalist, mechanical keyboards that are both stylish and functional for professionals and gamers.</dd>
+                            <dt>Filco</dt>
+                            <dd>A Japanese brand known for its high-quality, no-frills mechanical keyboards that emphasize reliability and typing experience.</dd>
+                        </dl>
+
+
+
+                    
+                </section>
+
+                <section id="Tip_Tastatura">
+                    <h3>Tip Tastatura</h3>
+                    
+
+
+
+                    
+                </section>
+
+                <section id="Tip_utilizare">
+                    <h3>Tip Utilizare</h3>
+                    
+
+
+                    
+
+
+
+                </section>
+
+            </section>
+
+
+
+
+            <!--Descriere Accesorii-->
+            <section id="Accesorii">
+
+                <ins><h2>Accesorii</h2></ins>
+                <p>
+                    Accesoriile noastre dedicate tastaturilor sunt concepute să îmbogățească și să personalizeze experiența fiecărui utilizator. De la <em><b>keycaps-uri personalizabile</b></em>, care îți permit să-ți exprimi stilul unic și să îmbunătățești senzația tactilă, până la suporturi <b>ergonomice</b> pentru încheieturi, care oferă un <b>confort</b> sporit pe durata sesiunilor prelungite de lucru sau joc, fiecare accesoriu este selecționat pentru a îmbunătăți performanța și estetica setup-ului tău. În plus, oferim și <b>huse de protecție</b> pentru a-ți păstra tastatura în siguranță de praf și zgârieturi, <b>cabluri USB premium</b> pentru o conexiune fiabilă și rapidă, precum și <b>kit-uri de curățare</b> pentru întreținere ușoară. Înarmează-ți tastatura cu aceste accesorii esențiale pentru a transforma fiecare apăsare de tastă într-o experiență unică și satisfăcătoare.
+                </p>
+
+                <section id="Toate_Accesoriile">
+
+                    <h3>Toate</h3>
+                    
+
+
+
+                    
+                </section>
+
+                <section id="KeyCaps">
+                    <h3>KeyCaps</h3>
+                    
+
+
+
+                    
+                </section>
+
+                <section id="Spray_de_curatare">
+                    <h3>Spray de curatare</h3>
+                    
+
+
+
+                    
+                </section>
+
+                <section id="Suport_incheietura">
+                    <h3>Suport incheietura</h3>
+                    
+
+
+
+                    
+
+
+
+                </section>
+
+            </section>
+
+
+
+
+            <!--Descriere Magazine-->
+            <aside id="Magazine">
+
+                <ins><h2>Magazine</h2></ins>
+                <p>
+                    Magazinele noastre reprezintă mai mult decât simple puncte de vânzare; ele sunt destinații unde pasiunea pentru tehnologie și inovație se întâlnește cu nevoile și dorințele clienților. Fiecare locație este proiectată să ofere o experiență de cumpărături captivantă și interactivă, unde <q><b>clienții pot explora, testa și descoperi cele mai noi și performante tastaturi și accesorii</b></q>. Personalul nostru amabil și bine informat este mereu la dispoziție pentru a oferi asistență personalizată, sfaturi experte și pentru a răspunde la toate întrebările, asigurându-se că fiecare vizitator găsește produsul perfect adaptat nevoilor sale. Pe lângă produsele de înaltă calitate, magazinele noastre oferă și evenimente exclusive, <q>workshop-uri și demonstrații</q> care să îmbogățească cunoștințele și experiența comunității noastre. Venind la noi, vei descoperi nu doar cele mai recente inovații din lumea tastaturilor, dar și un spațiu prietenos și inspirațional, dedicat tehnologiei de vârf.
+                </p>
+
+            </aside>
+
+
+            <section id="galerie-statica">
+                <h2>Galerie</h2>
+                <div id="grid-galerie">
+
+                    <figure>
+                        <img src="resurse/imagini/imag4_medie.png" alt="tastatura">
+                        <figcaption>Tastaturi</figcaption>
+                    </figure>
+                   
+
+                </div>
+            </section>
+
+            <!--Descriere Suport-->
+            <article id="Suport">
+
+                <ins><h2>Suport</h2></ins>
+                <p>
+                    Serviciul nostru de suport, contact și asistență este conceput pentru a oferi clienților o experiență de cumpărături fără egal. Echipa noastră dedicată de <b>profesioniști</b> este întotdeauna disponibilă să răspundă întrebărilor, să ofere soluții personalizate și să te <b>ghideze</b> prin selecția noastră vastă de produse pentru a găsi opțiunile perfecte care se potrivesc nevoilor tale specifice. Fie că ai nevoie de ajutor pentru a alege tastatura ideală, căuți recomandări pentru accesorii compatibile sau ai întrebări despre procesul de comandă și livrare, suntem aici să te asistăm la fiecare pas. Beneficiezi de <em><b>sfaturi profesioniste și ghiduri de cumpărături detaliate</b></em>, asigurându-te că fiecare achiziție este informată și ajustată preferințelor tale. Cu suportul nostru, cumpărăturile devin mai simple, mai rapide și mai satisfăcătoare.
+                </p>
+
+                <section id="Contact_si_Asistenta">
+
+
+                    <h3>Contact si Asistenta</h3>
+                    
+
+
+
+                    
+                </section>
+
+                <section id="Ghid_de_cumparaturi">
+                    <h3>Ghid de cumparaturi</h3>
+                    
+
+
+
+                    
+
+
+
+                </section>
+
+            </article>
+
+
+
+
+
+            
+
+</main>
+    <footer>
+        <a href="#" id="link-top"><div id="triunghi"></div></a>
+    </footer>
+
+</body>
+
+
+
+</html>

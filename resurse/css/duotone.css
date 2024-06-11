@@ -1,0 +1,39 @@
+﻿.imaginediv {
+    position: relative;
+    top:50%;
+    left:40%;
+ 
+    background-image: url(/resurse/imagini/cat.png);
+    background-size:cover;
+    width: 300px;
+    height: 200px;
+}
+
+    .imaginediv::before, .imaginediv::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: screen;
+        transition: 2s;
+    }
+
+    .imaginediv::before {
+        background-color: var( --hover-primary);
+        left: -100%;
+    }
+
+    .imaginediv::after {
+        background-color: var(  --hover-secondary);
+        right: -100%;
+    }
+
+    .imaginediv:hover::before {
+        left: 0;
+    }
+
+    .imaginediv:hover::after {
+        right: 0;
+    }
+

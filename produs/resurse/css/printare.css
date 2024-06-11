@@ -1,0 +1,61 @@
+﻿/*  printare.css    */
+ 
+@media print {
+    /* Ascunde elementele media, linkul către începutul paginii si meniul */
+    img, video, iframe, [class*="media-dependent"], #top-link, nav {
+        display: none !important;
+    }
+
+    /* Stilizează banner-ul specificat */
+    footer p {
+        display: block;
+        width: 80%;
+        margin: 0 auto 10px;
+        border: 2px dotted black;
+        position: relative;
+        top: 0;
+        page-break-after: avoid;
+    }
+
+    /* Transforma gridul in block */
+    .grid {
+        display: block !important;
+    }
+
+    /* afiseaza linkurile ca text normal */
+    a {
+        text-decoration: none !important;
+        color: black !important;
+    }
+
+    /* Stilizeaza headingul de nivel 1 */
+    h1 {
+        page-break-before: always;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 2.5em;
+        text-decoration: underline;
+    }
+
+    /*  watermark pe fiecare pagina */
+    body::after {
+        content: "Piroi Madalin-George";
+        position: fixed;
+        bottom: 10px;
+        left: 0;
+        width: 100px;
+        height: 2cm;
+        border: 2px double black;
+        opacity: 0.65;
+        z-index: 9999;
+    }
+
+    /* Seteaza marginile pentru paginile din stanga si dreapta */
+    @page :left {
+        margin: 2.5cm 0.5cm 2.5cm 0.5cm;
+    }
+
+    @page :right {
+        margin: 0.5cm 2.5cm 0.5cm 2.5cm;
+    }
+}

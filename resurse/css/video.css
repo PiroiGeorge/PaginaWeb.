@@ -1,0 +1,41 @@
+﻿/*  video.css   */
+ 
+.container-iframe {
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: flex-end; 
+    align-items: flex-end; 
+    position: relative;
+    width: 100%; 
+}
+
+    .container-iframe iframe {
+        width: 100%;
+    }
+
+.taburi-iframe {
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 10px;
+}
+
+    .taburi-iframe > a {
+        display: block;
+        border: 1px solid var(--border-primary);
+        background-color: var(--background-quaternary);
+        padding: 0.6em;
+        transition: background-color 0.3s;
+        border-top-right-radius: 10px;
+    }
+
+        .taburi-iframe > a:hover {
+            background-color: var( --hover-primary);
+        }
+        
+
+        .taburi-iframe > a:last-child {
+            margin-bottom: 0;
+            border-top-right-radius: 10px;
+        }

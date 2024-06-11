@@ -1,0 +1,281 @@
+﻿/*  still.css   */
+
+ 
+/* Stil general */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-soft); 
+    color: var(--text-secondary); 
+}
+
+/* Header */
+header {
+    background-color: var(--background-primary); 
+    color: var(--text-primary); 
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 5px solid var(--border-primary); /* Border */
+    border-radius: 0 0 15px 15px; /* Colturi rotunjite în partea de jos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow sub header */
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--background-quaternary); /* Fundal footer */
+    color: var(--text-primary); /* Culoare text footer */
+    text-align: center;
+    padding: 20px;
+    border-top: 5px solid var(--border-secondary); /* Border */
+    border-radius: 15px 15px 0 0; /* Colturi rotunjite în partea de sus */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Shadow deasupra footer */
+}
+
+/* Zona Gridului */
+.container-grid {
+    display: grid;
+    gap: 20px; /* Spatiere intre celule */
+    padding: 20px;
+    background-color: var(--background-tertiary); /* Fundal zona grid */
+    border: 3px solid var(--border-light); /* Border pentru grid */
+    border-radius: 10px; /* Colturi rotunjite pentru grid */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Shadow pentru zona grid */
+    margin: 20px auto; /* Centrare si spatiere */
+}
+
+
+
+    footer small, footer address {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+        footer address p, footer small {
+            margin: 0;
+        }
+
+    footer a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+/* ajustari */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+        nav ul li {
+            text-align: center;
+        }
+
+    footer {
+        flex-direction: column;
+    }
+
+        footer small, footer address {
+            flex-direction: column;
+            align-items: center;
+        }
+}
+
+
+
+section, article, aside {
+    background-color: white;
+    margin-bottom: 20px;
+    
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #005a87;
+}
+
+
+
+:root {
+    --text-padding: 20px;
+}
+
+/*  padding pentru elemente  de text */
+p, h1, h2, h3, h4, h5, h6, .text-container {
+    padding: var(--text-padding);
+}
+
+/*  header, footer si containerul grid */
+header, footer, .container-grid {
+    padding: var(--text-padding);
+}
+
+    /*  padding doar în interiorul acestor zone și nu la container in sine */
+    header p, footer p, .container-grid p {
+        padding: var(--text-padding);
+    }
+
+/*  figcaption */
+figcaption {
+    padding: var(--text-padding);
+}
+
+
+
+.fa-keyboard, .fa-cog {
+    font-size: 24px; /* Ajustează dimensiunea iconurilor */
+    color: #4E25DB; /* O culoare din schema site-ului */
+}
+
+.fa-cog {
+    animation: spin 2s infinite linear; /* Personalizează viteza de rotație pentru iconul animat */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+#link-top {
+    position: fixed;
+    bottom: 0.3em;
+    opacity: 0.5;
+    left: 0.3em;
+    width: 4rem;
+    box-sizing: border-box;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border: 5px solid grey;
+    border-top: 0;
+    border-bottom: 0;
+    border-radius: 50%;
+    background: rgb(220, 220, 220);
+}
+
+    #link-top:hover {
+        opacity: 1;
+    }
+
+#triunghi {
+    height: 0px;
+    width: 0;
+    display: inline-block;
+    border-bottom: 1.5rem solid grey;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    transition: transform 0.3s ease; /* tranzitie pentru transformarea triunghiului */
+}
+
+#link-top:hover #triunghi {
+    border-bottom-color: yellow; /* Schimbăm culoarea  la hover */
+    transform: translateY(-50%) ;
+}
+
+
+
+/* Container pentru tabel */
+.table-container {
+    overflow-x: auto; /*  scrollbar orizontal */
+    margin: 20px;
+}
+
+/* Tabel */
+table {
+    border-collapse: collapse;
+    border: 5px double #333;
+    width: 100%;
+}
+
+/* Celule de tabel */
+th, td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Stilizare pentru captiune */
+caption {
+    caption-side: bottom;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Efect la hover */
+tr:hover td {
+    background-color: #333;
+    color: #fff;
+    border-width: 5px;
+    transition: background-color 0.75s, color 0.75s, border-width 0.75s; /* tranzitie */
+}
+
+
+tbody td:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+
+
+#efect-css-reflexie-text {
+    color: var(--text-primary);
+    font-weight: 800;
+    position: relative;
+    font-size: 50px;
+}
+
+    #efect-css-reflexie-text::after {
+        color:gray;
+        content: 'ClickCraft'; /* Text content for the reflection */
+        position: absolute;
+        bottom: 86px; /* Adjust the reflection position */
+        left: 0;
+        right: 0;
+        height: 100%; /* Make sure it covers the entire text */
+        -webkit-transform: scaleY(1) rotateX(180deg); /* Initial scaleY value and rotation */
+        transform-origin: bottom; /* Set the rotation origin to the bottom */
+        
+    }
+
+    #efect-css-reflexie-text:hover::after {
+        bottom: 140px;
+        -webkit-transform: scaleY(2) rotateX(180deg); /* Scale the reflection vertically and keep the rotation */
+    }
+
+
+.container {
+    width: 100%; /* Lățimea containerului */
+    overflow: hidden; /* Ascundem liniile care depășesc dimensiunea containerului */
+}
+
+.styled-hr {
+    height: 10px; /* Înălțimea liniei */
+    background-image: url("/resurse/imagini/hr.png");
+
+}
+
+
+
+
+
+
+
+
+
+
+

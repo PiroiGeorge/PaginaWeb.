@@ -1,0 +1,50 @@
+<header id="top">
+    <h1 id="efect-css-reflexie-text" REFL-TEXT="ClickCraft"> ClickCraft </h1>
+    <p>Ip:1</p>
+    <nav>
+        <label id="hamburger" for="ch-menu">
+            <img src="resurse/imagini/Hamburger_icon_alb.png" alt="menu">
+        </label>
+        <input id="ch-menu" type="checkbox">
+        <ul class="meniu">
+            <li><a href="/index#Acasa"><i class="fas fa-home"></i> <span class="home-text">Acasă</span></a></li>
+
+            <li><a href="../inregistrare">Inregistrare</a></li>
+
+            <li><a href="produse">Produse</a></li>
+            <li>
+                <a href="/index#Tastaturi">Tastaturi</a>
+                <ul>
+                    <li><a href="/index#Toate_Tastaturile">Toate</a></li>
+                    <li><a href="/index#Brand_Tastaturi">Brand</a></li>
+                    <li><a href="/index#Tip_Tastatura">Tip Tastatura</a></li>
+                    <li><a href="/index#Tip_Utilizare">Tip Utilizare</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#Accesorii">Accesorii</a>
+                <ul>
+                    <li><a href="/index#Toate_Accesoriile">Toate</a></li>
+                    <li><a href="/index#KeyCaps">KeyCaps</a></li>
+                    <li><a href="/index#Spray_de_curatare">Spray de curatare</a></li>
+                    <li><a href="/index#Suport_incheietura">Suport incheietura</a></li>
+                </ul>
+            </li>
+            <li><a href="/index#Magazine">Magazine</a></li>
+            <li>
+                <a href="/index#Suport">Suport</a>
+                <ul>
+                    <li><a href="/index#Contact_si_Asistenta">Contact si Asistenta</a></li>
+                    <li><a href="/index#Ghid_de_cumparaturi">Ghid de cumparaturi</a></li>
+                </ul>
+            </li>
+            <li><a href="/cos-virtual">Coș</a></li>
+            <%- 
+            include("submeniu-administrare.ejs")
+            %>
+            <%- 
+            include("submeniu-utilizator-logat.ejs")
+            %>
+        </ul>
+    </nav>
+</header>

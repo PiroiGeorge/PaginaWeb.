@@ -1,0 +1,51 @@
+﻿/*  link.css    */
+ 
+/* Linkul Google  */
+a[href="https://www.google.co.uk/"] {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 20px 0;
+    background-color: var(--background-secondary); 
+    color: var(--text-primary); /* Text alb */
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+}
+
+    /* Hover pentru linkul Google */
+    a[href="https://www.google.co.uk/"]:hover {
+        background-color: var(--hover-secondary); /* Schimbă culoarea fundalului la hover */
+        transform: scale(1.05); /* Efect de mărire */
+    }
+
+/* Linkul de descarcare a imaginii  */
+a[href$=".jpg"][download], a[href$=".jpeg"][download], a[href$=".png"][download] {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--background-secondary); /* Magenta pentru butonul de descărcare */
+    color: var(--text-primary); /* Text alb */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 20px 0;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+    /* Hover pentru linkul de descarcare a imaginii */
+    a[href$=".jpg"][download]:hover, a[href$=".jpeg"][download]:hover, a[href$=".png"][download]:hover {
+        background-color: var(--hover-border); /* Roz trandafir pentru hover */
+        transform: scale(1.05); /* Efect de mărire */
+    }
+
+
+
+
+.flex-container {
+    display: flex;
+    justify-content: center; /* centrare orizontala */
+    align-items: center; /* centrare verticala */
+    height: 10vh; /* inaltime */
+}

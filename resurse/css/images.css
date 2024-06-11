@@ -1,0 +1,57 @@
+﻿/* images.css */
+ 
+:root {
+    --image-max-width: 100%; 
+    --image-min-width: 150px; 
+}
+
+figure {
+    max-width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--background-soft);
+}
+
+    figure img {
+        width: var(--image-max-width);
+        min-width: var(--image-min-width); /*  imaginile nu devin prea mici */
+        height: auto;
+        transition: transform 0.5s ease; /* Tranziție la hover */
+    }
+
+    figure:hover img {
+        transform: translateY(-30%) scale(1.3); /* Translație și scalare la hover */
+    }
+
+figcaption {
+    padding: 10px;
+    text-align: center;
+    background-color: var(--background-tertiary);
+    font-style: italic;
+    font-size: 1.1em;
+    transition: background-color 1.25s ease, color 1.25s ease; /* Tranziție pentru figcaption */
+}
+
+figure:hover figcaption {
+    background-color: var(--hover-primary); /* Noua culoare de background */
+    color: black; /* Noua culoare de text */
+}
+
+/*  ajustarea dimensiunilor imaginii pe ecrane mici */
+@media (max-width: 768px) {
+    figure {
+        max-width: 90%; 
+    }
+
+        figure img {
+            min-width: var(--image-min-width); 
+        }
+}
+
+@media (max-width: 480px) {
+    figure {
+        max-width: 100%; 
+    }
+}

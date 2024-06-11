@@ -1,0 +1,55 @@
+﻿#grid-galerie {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px; /* Spațiu între imagini */
+    counter-reset: img-counter; /* Resetare contor */
+}
+
+@media screen and (min-width: 1024px) {
+    #grid-galerie {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+/* Imagine */
+figure {
+    position: relative;
+    margin: 0;
+}
+
+/* Figcaption */
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+    /* Indexare cu litere mici */
+    figcaption::before {
+        content: counter(img-counter, lower-alpha) ". "; /* Afiseaza indexul */
+        counter-increment: img-counter; /* Incrementare contor */
+    }
+
+/* Patrate goale in mijloc */
+#grid-galerie::before,
+#grid-galerie::after {
+    content: "";
+    width: 100%;
+    height: 0; /* Schimbați înălțimea pentru a ajusta spațiul gol */
+}
+
+@media screen and (min-width: 1024px) {
+    #grid-galerie::before,
+    #grid-galerie::after {
+        grid-column: 2 / span 2; /* Așează patratele goale în mijloc pe ecran mare */
+        grid-row: 2 / span 1; /* Așează patratele goale în mijloc pe ecran mare */
+    }
+}

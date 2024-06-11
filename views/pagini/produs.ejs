@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta name="description" content="ClickCraft: Tastaturi și accesorii de cea mai bună calitate.">
+    <meta name="keywords" content="Tastaturi, accesorii, calitate superioară, performanță, durabilitate, confort, gaming, ergonomic, personalizare, variate, inovație">
+    <link rel="stylesheet" href="/resurse/css/produs.css" type="text/css" />
+    <title>ClickCraft</title>
+    <%- include("../fragmente/head") %>     
+</head>
+<body>
+    <%- include("../fragmente/header") %>
+
+    <main>
+        <section>
+            <h2>Detalii produs</h2>
+            <article id="art-produs">
+                <h3><span class="nume"><%- prod.nume %></span></h3>
+                <p>Pret: <span class="pret"><%- prod.pret %> </span></p>
+                <p>Descriere: <span class="descriere"><%- prod.descriere %> </span></p>
+                <p>Ingrediente: <span class="ingrediente"><%- prod.ingrediente %> </span></p>
+                <p>Tehnologie: <span class="tehnologie"><%- prod.tehnologie %> </span></p>
+                <p>Gramaj: <span class="gramaj"><%- prod.gramaj %> </span></p>
+                <p>Categorie: <span class="categorie"><%- prod.categorie %> </span></p>
+                <p>Brand: <span class="brand"><%- prod.brand %> </span></p>
+                <p>Data adăugare: <span class="categorie"><%- prod.data_adaugare %> </span></p>
+                <figure class="imag-produs">
+                    <img src="/resurse/imagini/produse/<%- prod.imagine %>" alt="[imagine <%- prod.nume %>]" />
+                </figure>
+            </article>
+        </section>
+    </main>
+
+    <%- include("../fragmente/footer") %>
+</body>
+</html>

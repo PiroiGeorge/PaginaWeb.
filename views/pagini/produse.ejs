@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ClickCraft: Tastaturi și accesorii de cea mai bună calitate.">
+    <meta name="keywords" content="Tastaturi, accesorii, calitate superioară, performanță, durabilitate, confort, gaming, ergonomic, personalizare, variate, inovație">
+    <link rel="stylesheet" href="/resurse/css/produse.css" type="text/css" />
+    <title>ClickCraft</title>
+    <%- include("../fragmente/head") %>     
+    <script type="text/javascript" src="/resurse/js/produse.js"></script>
+</head>
+<body>
+    <%- include("../fragmente/header") %>
+
+    <main>
+        <label for="inp-nume">Nume:</label>
+        <input type="text" id="inp-nume">
+        
+        <label for="inp-pret">Pret minim:</label>
+        <input type="number" id="inp-pret" value="0" min="0" max="99999">
+        <span id="infoRange">(0)</span>
+
+        <label for="inp-categorie">Categorie:</label>
+        <select id="inp-categorie">
+            <option value="toate">Toate</option>
+            <option value="Gaming">Gaming</option>
+            <option value="Office">Office</option>
+            <option value="KeyCaps">KeyCaps</option>
+            <option value="Suport pentru încheietura">Suport pentru încheietura</option>
+            <option value="Spray de curățare">Spray de curățare</option>
+            <option value="Business">Business</option>
+            <option value="Portabil">Portabil</option>
+            <option value="Standard">Standard</option>
+        </select>
+
+        <p>
+            <button id="filtrare">Filtreaza</button> 
+            <button id="resetare">Reseteaza</button><br/>
+            <button id="sortCrescNume">Sorteaza crescator dupa pret si nume</button>
+            <button id="sortDescrescNume">Sorteaza descrescator dupa pret si nume</button>
+        </p>
+        
+        <p id="p-suma">Apăsați Alt+"c" pentru suma preturilor produselor afișate. </p>
+        
+        <section id="produse">
+            <h2>Produse</h2>
+            <div class="grid-produse">
+                <% for(let prod of produse) { %>
+                    <article id="elem_<%- prod.id %>" class="produs <%- prod.categorie.replace(/\s/g, '-') %>">
+                        <h3 class="nume">Nume: <a href="/produs/<%- prod.id %>"><span class="val-nume"><%- prod.nume %></span></a></h3>
+                        <div class="info-prod">
+                            <table>
+                                <tr>
+                                    <td>Pret:</td>
+                                    <td><span class="val-pret"><%- prod.pret %></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Brand:</td>
+                                    <td><span class="val-brand"><%- prod.brand %></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Tehnologie:</td>
+                                    <td><span class="val-tehnologie"><%- prod.tehnologie %></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Gramaj:</td>
+                                    <td><span class="val-gramaj"><%- prod.gramaj %></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Categorie:</td>
+                                    <td><span class="val-categorie"><%- prod.categorie %></span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p class="descriere"><%- prod.descriere %></p>
+                        <figure>
+                            <a href="/produs/<%- prod.id %>"><img src="/resurse/imagini/produse/<%- prod.imagine %>" alt="[imagine <%- prod.nume %>]" /></a>
+                        </figure>
+                        <label class="selecteaza-cos">
+                            Selectează:<br/>
+                            <input type="checkbox" class="select-cos" value="<%- prod.id %>" autocomplete="off">
+                        </label>
+                    </article>
+                <% } %>
+            </div>
+        </section>
+    </main>
+
+    <%- include("../fragmente/footer") %>
+</body>
+</html>

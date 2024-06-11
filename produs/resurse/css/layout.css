@@ -1,0 +1,159 @@
+﻿/* layout.css   */
+ 
+html{
+    font-size:18px;
+
+}
+
+#grid-pagina {
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns:repeat(4,1fr);    /* 1fr 1fr 1fr*; */
+    grid-template-areas:"figure figure figure figure" 
+                        "Tastaturi Tastaturi video video"
+                        "Tastaturi Tastaturi Accesorii Accesorii"
+                        "Magazine Acasa Acasa Suport"
+                        "tabel tabel tabel tabel";
+                                                                
+}
+
+
+
+
+#grid-pagina > * {
+        outline: 2px solid skyblue;
+        padding: 1em;
+}
+
+
+#grid-pagina > figure {
+        margin: 0;
+}
+
+
+#Acasa {
+    grid-area: Acasa;
+}
+
+#Tastaturi {
+    grid-area: Tastaturi;
+}
+
+#Accesorii {
+    grid-area: Accesorii;
+}
+
+#Magazine {
+    grid-area: Magazine;
+}
+
+#Suport {
+    grid-area: Suport;
+}
+
+#figure {
+    grid-area: figure;
+}
+
+#video {
+    grid-area: video;
+    
+}
+
+#tabel {
+    grid-area: tabel;
+}
+
+@media screen and (max-width:1200 px){
+    #grid-pagina {
+        
+        grid-template-columns: repeat(2,1fr); /* 1fr 1fr 1fr*; */
+        grid-template-areas:"figure figure "
+                            "Acasa Acasa "
+                            "Tastaturi Tastaturi "
+                            "Accesorii Accesorii"
+                            " Suport Suport";
+    }
+}
+
+
+@media screen and (max-width:880px) {
+    html {
+        font-size: 12px;
+    }
+
+    #grid-pagina {
+        display: block;
+    }
+
+        /* Ensure all children of #grid-pagina take full width and stack vertically */
+        #grid-pagina > * {
+            width: 100%; /* Make each child take the full width */
+            margin-bottom: var(--grid-gap-small); /* Add some space between elements */
+        }
+
+            /* Optionally, remove the margin-bottom for the last child to avoid extra space at the bottom */
+            #grid-pagina > *:last-child {
+                margin-bottom: 0;
+            }
+}
+
+
+
+
+/*  spatiere ecran    */
+:root {
+    --spacing-large: 100px; /* Spatiere mare pentru ecran mare */
+    --spacing-medium: 50px; /* Spatiere medie pentru ecran mediu */
+    --spacing-small: 20px; /* Spatiere mica pentru ecran mic */
+}
+
+/* spatiere stanag si dreapta */
+body {
+    padding-left: var(--spacing-large);
+    padding-right: var(--spacing-large);
+}
+
+/* ajustari */
+@media (max-width: 1024px) {
+    body {
+        padding-left: var(--spacing-medium);
+        padding-right: var(--spacing-medium);
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-left: var(--spacing-small);
+        padding-right: var(--spacing-small);
+    }
+}
+
+
+/*  spatierea grid-ului */
+:root {
+    --grid-gap-large: 30px; /* Spatiere mare pentru ecran mare */
+    --grid-gap-medium: 20px; /* Spatiere medie pentru ecran mediu */
+    --grid-gap-small: 10px; /* Spatiere mica pentru ecran mic */
+}
+
+/* Setarea spatierii grid-ului */
+.container-grid {
+    display: grid;
+    gap: var(--grid-gap-large); 
+}
+
+/* ajustari  */
+@media (max-width: 1024px) {
+    .container-grid {
+        gap: var(--grid-gap-medium); 
+    }
+}
+
+@media (max-width: 768px) {
+    .container-grid {
+        gap: var(--grid-gap-small); 
+    }
+}
+
+
